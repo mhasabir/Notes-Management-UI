@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-md-6">
+      <div>
+          <div class="col-md-2">&nbsp;</div>
+          <div class="col-md-8 max-width-400">
+              <div class="note-box mar-10-0">
+                  <input type="text" class="note-input-area" value="" name="username"/>
+                  <span class="note-placeholder">Username</span>
+                  <i class="fa fa-user"></i>
+              </div>
+              <div class="note-box mar-10-0">
+                  <input type="text" class="note-input-area"/>
+                  <span class="note-placeholder">Password</span>
+                  <i class="fa fa-eye"></i>
+              </div>
+              <div class="clearfix"></div>
+              <button type="button" class="note-btn primary-bg mar-b-50" (click)="onLoginClicked()">LOG IN</button>
+              <div class="clearfix"></div>
+              <div class="note-check-box pull-left">
+                  Don't have any account. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </div>
+              <a [routerLink]="['registration']" class="primary-color pull-left">REGISTER</a>
+              <div class="clearfix"></div>
+          </div>
+          <div class="col-md-2">&nbsp;</div>
+      </div>
+  </div>
+</div>

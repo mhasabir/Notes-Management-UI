@@ -1,0 +1,12 @@
+<div class="left-bg">
+  <ul class="note-left-nav">
+    <ng-container *ngFor="let item of sidebarItems">
+      <li>
+        <a [routerLink]="[item.route]">
+          <i class="{{item.icon}}"></i>
+          <span class="mtext">{{item.label}}</span>
+        </a>
+      </li>
+    </ng-container>
+  </ul>
+</div>

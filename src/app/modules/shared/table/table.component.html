@@ -1,0 +1,38 @@
+<div class="row  right-content mar-top-10">
+  <div class="tabcontent-box no-padd">
+    <div class="clearfix"></div>
+    <br />
+    <div class="table-h-o">
+      <table class="grid-table">
+        <thead>
+          <tr>
+            <ng-container *ngFor="let col of columns">
+              <ng-container *ngIf="col.visible">
+                <th>{{col.header}}</th>
+              </ng-container>
+            </ng-container>
+            <th>
+              Actions
+            </th>
+          </tr>
+        </thead>
+        <tbody class="for-scroll">
+          <ng-container *ngFor="let data of dataSource">
+            <tr>
+              <ng-container *ngFor="let col of columns">
+                <ng-container *ngIf="col.visible">
+                  <td>{{data[col.name]}}</td>
+                </ng-container>
+              </ng-container>
+              <td>
+                <a href="#" class="mar-10"><i class="fa fa-eye primary-color "></i></a>
+                <a href="#" class="mar-10"><i class="fa fa-pencil "></i></a>
+                <a href="#" class="mar-10"><i class="fa fa-trash danger"></i></a>
+              </td>
+            </tr>
+          </ng-container>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
